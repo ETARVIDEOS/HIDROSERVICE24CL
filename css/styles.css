@@ -599,6 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 .step-node {
     width: 64px;
     height: 64px;
+    flex-shrink: 0;
     background: var(--bg-dark);
     border: 2px solid var(--glass-border);
     border-radius: 50%;
@@ -638,15 +639,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Marquee */
 .marquee-content {
     display: flex;
-    width: 200%;
-    animation: marquee 20s linear infinite;
+    width: max-content;
+    animation: marquee 30s linear infinite;
 }
 
 .marquee-track {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 50%;
+    gap: 24px;
+    padding-right: 24px;
 }
 
 .marquee-track span {
@@ -654,6 +655,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
     font-size: 1.25rem;
     letter-spacing: 2px;
+    white-space: nowrap;
 }
 
 .marquee-track .dot {
