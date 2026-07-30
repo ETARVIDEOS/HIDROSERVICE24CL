@@ -41,7 +41,7 @@
 
 html, body {
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -121,6 +121,8 @@ h1, h2, h3, h4, h5, h6 {
 .mb-6 { margin-bottom: 1.5rem; }
 .mb-8 { margin-bottom: 2rem; }
 .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
 .p-8 { padding: 2rem; }
 .overflow-hidden { overflow: hidden !important; }
 
@@ -807,6 +809,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
     background: transparent;
     border: none;
     color: white;
@@ -815,6 +818,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     cursor: pointer;
     text-align: left;
+}
+.accordion-header span:first-child {
+    flex: 1;
+    min-width: 0;
+    word-break: break-word;
+}
+.accordion-header .icon {
+    flex-shrink: 0;
 }
 
 .accordion-header .icon {
@@ -855,6 +866,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 16px;
     border-radius: var(--radius-sm);
     transition: background 0.3s;
+}
+.contact-item > div {
+    flex: 1;
+    min-width: 0;
+    word-break: break-word;
 }
 
 .contact-item:hover {
@@ -982,6 +998,7 @@ h1, h2, h3, h4, h5, h6 {
     .process-step { flex-direction: row; text-align: left; gap: 24px; }
     .step-node { margin-bottom: 0; }
     .footer-grid { grid-template-columns: 1fr; }
+    .footer { padding-bottom: 120px; }
     .gallery-grid { column-count: 2; }
     .glass-stats { bottom: 0; right: 0; position: relative; border-radius: 0; justify-content: center;}
 }
