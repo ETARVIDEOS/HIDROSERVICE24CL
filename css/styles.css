@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-img {
     height: 40px;
-    border-radius: 6px;
+    border-radius: 50%;
 }
 
 .logo-main {
@@ -1218,3 +1218,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -10px;
 }
 .ti-logo { height: 16px; }
+
+/* Disco Logo Animation */
+.disco-logo {
+    animation: disco-spin 7s ease-in-out infinite;
+}
+@keyframes disco-spin {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg); }
+}
+
