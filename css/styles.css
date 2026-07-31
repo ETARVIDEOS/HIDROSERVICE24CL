@@ -1221,7 +1221,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Disco Logo Animation */
 .disco-logo {
-    animation: disco-spin 7s ease-in-out infinite;
+    animation: disco-spin 4s ease-in-out infinite;
 }
 @keyframes disco-spin {
     0% { transform: rotate(0deg); }
